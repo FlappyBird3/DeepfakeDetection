@@ -145,14 +145,9 @@ described below.
 ## Interpretability audit (in progress)
 
 The gap between the high reported accuracy and the failure on out-of-distribution
-audio raises the question of what the network actually keys on. The planned
-follow-up applies Grad-CAM to the final convolutional layer to produce heatmaps
-over the time-frequency input, aggregates those maps across many spoof
-predictions to look for a systematic pattern rather than a single anecdote, and
-then tests any suspected shortcut causally by masking the implicated region and
-measuring whether predictions collapse. The framing is an audit of what the model
-learned and whether it is trustworthy, not a claim of improved accuracy; a
-finding that the model relies on a shortcut would be a useful negative result.
+audio raises the question of what the network actually keys on. 
+
+GRAD-CAM analysis may elucidate this, which will hopefully happen if time allows.
 
 ## Running it
 
